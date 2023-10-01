@@ -33,7 +33,7 @@ devenv shell
 #### Kind Cluster (optional)
 
 You may already have a Kuberentes cluster ready to use. But if you don't,
-you can quickly spin one up using [Kind}(https://kind.sigs.k8s.io/):
+you can quickly spin one up using [Kind](https://kind.sigs.k8s.io/):
 
 ```shell
 kind create cluster --config ./kind-cluster.yaml
