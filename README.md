@@ -7,12 +7,12 @@ Temporal on K8s
 ### Kustomize
 
 If all you need is a base Kustomization that you can build upon, you can find that
-over at ``kustomize/base/`.
+over at ``kustomize/base/``.
 
 
 ### Deploy
 
-You can also try-out pre-configured flavors of Temporal using Skaffold.
+You can also try out pre-configured flavors of Temporal using Skaffold.
 
 
 #### devenv (optional)
