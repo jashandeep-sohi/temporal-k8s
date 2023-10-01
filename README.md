@@ -1,6 +1,6 @@
 # temporal-k8s
 
-Temporal on K8s
+Temporal on Kubernetes
 
 ## Getting Started
 
