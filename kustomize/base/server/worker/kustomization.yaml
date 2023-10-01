@@ -1,0 +1,18 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - ../service-base/
+
+components:
+  - ./patch-deploy/
+
+# worker doesn't need services from base
+patches:
+  - target:
+      kind: Service
+    patch: |-
+      kind: Service
+      metadata:
+        name: ignored
+      $patch: delete
