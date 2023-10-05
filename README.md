@@ -44,7 +44,7 @@ kind create cluster --config ./kind-cluster.yaml
 This uses PostgreSQL 13 as the datastore (both default & visibility):
 
 ```shell
-skaffold deploy -p temporal-pg13 --port-forward
+skaffold deploy -p pg13 --port-forward
 ```
 
 This will deploy a PostgreSQL 13 instance to the `temporal-ds-pg13` namespace and
