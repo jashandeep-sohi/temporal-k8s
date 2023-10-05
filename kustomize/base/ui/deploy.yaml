@@ -17,6 +17,13 @@ spec:
         app.kubernetes.io/component: ui
     spec:
       enableServiceLinks: false
+      topologySpreadConstraints:
+        - topologyKey: kubernetes.io/hostname
+          maxSkew: 1
+          whenUnsatisfiable: ScheduleAnyway
+          labelSelector:
+            matchLabels:
+              app.kubernetes.io/component: ui
       containers:
         - name: ui
           image: temporalio/ui
