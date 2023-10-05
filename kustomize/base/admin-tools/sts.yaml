@@ -24,13 +24,6 @@ spec:
         app.kubernetes.io/component: admin-tools
     spec:
       enableServiceLinks: false
-      topologySpreadConstraints:
-        - topologyKey: kubernetes.io/hostname
-          maxSkew: 1
-          whenUnsatisfiable: ScheduleAnyway
-          labelSelector:
-            matchLabels:
-              app.kubernetes.io/component: service
       containers:
         - name: admin-tools
           image: temporalio/admin-tools

@@ -17,13 +17,6 @@ spec:
         app.kubernetes.io/component: service
     spec:
       enableServiceLinks: false
-      topologySpreadConstraints:
-        - topologyKey: kubernetes.io/hostname
-          maxSkew: 1
-          whenUnsatisfiable: ScheduleAnyway
-          labelSelector:
-            matchLabels:
-              app.kubernetes.io/component: service
       volumes:
         - name: dynamic-config
           configMap:
